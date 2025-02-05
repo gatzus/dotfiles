@@ -26,7 +26,7 @@
 
     //Themes
     // Material dark, KTRZ Monokai, Kanagawa, Everforest Dark, Rosé Pine, Custom, Catpuccin blurred (cmd-k cmd-t)
-    "theme": "Catppuccin Mocha (Blur)",
+    "theme": "Catppuccin Macchiato (Blur)",
     "experimental.theme_overrides": {
         "background.appearance": "blurred"
     },
