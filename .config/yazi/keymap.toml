@@ -224,15 +224,23 @@ keymap = [
     { on = [
         "g",
         "c",
-    ], run = "cd ~/.config", desc = "Goto ~/.config" },
+    ], run = "cd ~/.dotfiles", desc = "Goto dotfiles" },
     { on = [
         "g",
         "d",
-    ], run = "cd ~/Downloads", desc = "Goto ~/Downloads" },
+    ], run = "cd ~/Downloads", desc = "Goto Downloads" },
     { on = [
         "g",
         "<Space>",
     ], run = "cd --interactive", desc = "Jump interactively" },
+    { on = [
+        "g",
+        "s",
+    ], run = "cd ~/Developer/3WiSe24", desc = "Goto Semeseter" },
+    { on = [
+        "g",
+        "v",
+    ], run = "cd /Volumes/JakobExtern", desc = "Goto Volumes" },
 
     # Tabs
     { on = "t", run = "tab_create --current", desc = "Create a new tab with CWD" },
