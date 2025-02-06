@@ -34,7 +34,19 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #export FZF_DEFAULT_COMMAD="fd --hiddden --strip-cwd-prefix --exclude .git"
 #export FZF_CTRL_T_COMMAND="FZF_DEFAULT_COMMAND"
 #export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix -exclude .git"
-export FZF_DEFAULT_OPTS=" --height 70% --layout=default --border " #aussehen von fzf
+export FZF_DEFAULT_OPTS="--layout=default --border" #aussehen von fzf
+#commands weiter oben funktionieren nicht wirklich. Deren Funktion ist aber Yazi in schlechter ist also egal
+
+#yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+	   # builtin cd -- "$cwd"  #ignoriert custom 'cd' commands
+		cd -- "$cwd" #nutzt meinen zoxide cd command, damit directories in meiner zoxide history sind
+	fi
+	rm -f -- "$tmp"
+}
 
 # aliasse
 alias zedi='zed $(fzf -m --preview="bat --color=always {}")' #oeffne file in zed editor
@@ -43,3 +55,4 @@ alias startai="ollama run deepseek-r1:7b" #startet ki in ollama
 alias runol="brew services run ollama" #startet ollama
 alias killol="brew services kill ollama" #killt ollama (geht nur so halb)
 alias stopol="brew services stop ollama" #stoppt ollama
+alias calc="bc -z --scale=10 -l"

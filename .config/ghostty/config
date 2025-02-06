@@ -30,6 +30,7 @@ minimum-contrast = 1.1
 cursor-style = bar
 cursor-style-blink = true
 mouse-hide-while-typing = true
+cursor-click-to-move = true
 
 # RANDOM
 shell-integration = zsh
