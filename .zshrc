@@ -30,6 +30,12 @@ eval "$(zoxide init --cmd cd zsh)"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#fzf
+#export FZF_DEFAULT_COMMAD="fd --hiddden --strip-cwd-prefix --exclude .git"
+#export FZF_CTRL_T_COMMAND="FZF_DEFAULT_COMMAND"
+#export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix -exclude .git"
+export FZF_DEFAULT_OPTS=" --height 70% --layout=default --border " #aussehen von fzf
+
 # aliasse
 alias zedi='zed $(fzf -m --preview="bat --color=always {}")' #oeffne file in zed editor
 alias opi='open $(fzf -m)' #oeffne files mit standardapp des files
