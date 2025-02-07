@@ -10,6 +10,7 @@
 // command pallete ist cmd + shift + p
 {
     //STANDARD SACHEN
+    "icon_theme": "Material Icon Theme",
     "vim_mode": false,
     "base_keymap": "VSCode",
     "autosave": "off",
@@ -18,15 +19,15 @@
     "soft_wrap": "editor_width",
     "current_line_highlight": "all",
     "features": {
-        "inline_completion_provider": "zed",
-        "copilot": false
+        "inline_completion_provider": "zed"
+        //"copilot": false
     },
 
     //VISUELLES
 
     //Themes
     // Material dark, KTRZ Monokai, Kanagawa, Everforest Dark, Rosé Pine, Custom, Catpuccin blurred (cmd-k cmd-t)
-    "theme": "Catppuccin Macchiato (Blur)",
+    "theme": "Catppuccin Espresso (Blur)",
     "experimental.theme_overrides": {
         "background.appearance": "blurred"
     },
