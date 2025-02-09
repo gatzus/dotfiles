@@ -23,6 +23,7 @@ unfocused-split-opacity = 0.75
 background-blur-radius = 3
 window-padding-x = 10,10
 window-padding-y = 3,3
+window-padding-balance = true
 # damit text nicht unsichtbar sein kann
 minimum-contrast = 1.1
 

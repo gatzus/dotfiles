@@ -10,17 +10,19 @@ CVS
 _darcs
 /.hg
 
-/.git/
+/.git
 /.gitignore
-/.gitmodules/
-/.github/
+/.gitmodules
+/.github
 
 /README.*
 /LICENSE.*
 /LICENSE
 /COPYING
+/README.md
 
 .DS_Store
+
 
 #fucking zen browser chromecss git repo
 # Ignore specific files
