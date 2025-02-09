@@ -1,0 +1,3 @@
+[submodule "Library/Application Support/zen/Profiles/twilight/chrome"]
+	path = Library/Application Support/zen/Profiles/twilight/chrome
+	url = git@github.com:greeeen-dev/natsumi-browser.git
