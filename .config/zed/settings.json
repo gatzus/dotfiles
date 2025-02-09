@@ -11,7 +11,7 @@
 {
     //STANDARD SACHEN
     "icon_theme": "Material Icon Theme",
-    "vim_mode": false,
+    "vim_mode": true,
     "base_keymap": "VSCode",
     "autosave": "off",
     "restore_on_startup": "last_session",
