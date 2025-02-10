@@ -12,6 +12,7 @@
     //STANDARD SACHEN
     "icon_theme": "Material Icon Theme",
     "vim_mode": true,
+    "relative_line_numbers": true,
     "base_keymap": "VSCode",
     "autosave": "off",
     "restore_on_startup": "last_session",
@@ -27,9 +28,12 @@
 
     //Themes
     // Material dark, KTRZ Monokai, Kanagawa, Everforest Dark, Rosé Pine, Custom, Catpuccin blurred (cmd-k cmd-t)
-    "theme": "Catppuccin Espresso (Blur)",
+    "theme": "Catppuccin Macchiato (Blur)",
     "experimental.theme_overrides": {
-        "background.appearance": "blurred"
+        "background.appearance": "blurred",
+        //macht line numbers mit catpuccin blur sichtbar
+        "editor.line_number": "#f5e0dc90",
+        "editor.active_line_number": "#FFFFFFFF"
     },
 
     //Fonts
